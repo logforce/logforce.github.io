@@ -106,7 +106,7 @@ body {
   content: "> ";
 }
 
-/*
+
 .input {
   color: rgba(192, 255, 192, 0.8);
   text-shadow:
@@ -117,7 +117,7 @@ body {
 .input::before {
   content: "$ ";
 }
-*/
+
 a {
   color: #fff;
   text-decoration: none;
