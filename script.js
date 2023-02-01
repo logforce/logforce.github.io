@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       else if (textInputValueLowerCase.substr(0, 6) == "stack ") {
         openLinkInNewWindow('https://stackoverflow.com/search?q=' + textInputValueLowerCase.substr(5));
-        addTextToResults("<i>I've searched on StackOverflow for " + "<b>" + textInputValue.substr(5) + "</b>" + "and it should be opened in a new window now.</i>");
+        addTextToResults("<i>I've searched on StackOverflow for " + "<b>" + textInputValue.substr(5) + "</b>" + " and it should be opened in a new window now.</i>");
       } else {
         textReplies();
       }
