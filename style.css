@@ -1,124 +1,188 @@
-:root {
-    /* Base font size */
-    font-size: 10px;
-
-    /* Full grid area variable */
-    --fullGrid: 1 / 1 / -1 / -1;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-body {
-    font-family: "Montserrat", Arial, sans-serif;
-    background-color: #fcfcfc;
+body{
+  font-family: 'Roboto','Helvetica Neue', 'Lucida Grande', sans-serif;
 }
 
-header {
-    /* Create grid spanning viewport width & height */
-    display: grid;
-    grid-template-rows: 100vh;
-    overflow: hidden;
-    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5);
+body, h1,h2,h3, p{
+	margin:0;
+	padding:0;
+  /*displays system font*/
+	/*font: caption;*/
 }
 
-main {
-    padding: 5em 2em;
-    max-width: 94em;
-    margin: 0 auto;
+.gradientCont{
+	background-image: linear-gradient(-270deg, #ffffff 0%, #0f0f0f 100%);
+	width:100%;
+	height: 300px;
 }
 
-h1 {
-    font-size: calc(1.8em + 2.5vw);
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
-    text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.4);
+.mainCont{
+	width:1000px;
+	margin: 0 auto;
 }
 
-h2 {
-    font-size: calc(3em + 0.2vw);
-    font-weight: 600;
-    text-align: center;
-    margin: 1.2em 0;
-    color: #111;
+.mainCont h2{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	/*text-transform: uppercase;*/
+	font-weight: 300;
+	font-size: 48px;
+	margin: 60px 0 0 0;
+	color: white;
+  opacity: 0;
+
+  animation: fadeInAnimation 1s ease-in-out 0s forwards;
 }
 
-h3 {
-    font-size: calc(3em + 0.2vw);
-    font-weight: 600;
-    text-align: right;
-    margin-right: 10%;
-    color: #111;
+.mainCont h3{
+	text-align: center;
+	font-weight: 400;
+	font-size: 18px;
+	color: rgba(255,255,255,0.75);
+  margin: 0 0 60px 0;
+  opacity: 0;
+
+  animation: fadeInAnimation 1s ease-in-out 0.5s forwards;
 }
 
-h4 {
-    font-size: calc(1em + 0.2vw);
-    font-weight: bold;
-    line-height: 2;
-    color: #222;
-    text-align: center;
-    margin-top: 5px;
+.terminalCont{
+	background: black;
+	width: 100%;
+	border-radius: 4px;
+  padding:12px 0 0 0;
+  margin-top: -20px;
+  font-family: 'Roboto Mono', monospace;
+  opacity: 0;
+
+  animation:
+    slideDownAnimation 1s ease-in-out 1s forwards,
+    fadeInAnimation 0.8s ease-in-out 1s forwards;
 }
 
-p {
-    font-size: calc(2em + 0.2vw);
-    font-weight: 400;
-    line-height: 2;
-    color: #222;
-    text-align: center;
+.userEnteredText{
+  color: rgba(255,255,255,0.5);
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 
-footer {
-    font-size: 10px
-    color: #222;
-    text-align: center;
+#terminalReslutsCont{
+	width:100%;
+	height: 400px;
+	padding: 12px;
+	overflow-y: auto;
+	resize: none;
+	border: none;
+	font-size: 14px;
+  line-height: 28px;
+	display: block;
+	color: rgba(255,255,255,0.9);
+}
+
+
+#terminalReslutsCont a{
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+}
+
+#terminalReslutsCont a:hover{
+  text-decoration: underline;
+}
+
+#terminalTextInput{
+	background: black;
+	display: block;
+	border: none;
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-radius: 0 0 4px 4px;
+	width: 100%;
+	color: white;
+	padding: 18px;
+	font-size: 14px;
+  outline: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.footerCont{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  color:#333;
+  font-size: 12px;
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out 2s forwards;
+}
+
+.footerCont a{
+  color: #037AFF;
+  text-decoration: none;
+}
+
+
+/*
+  Animation habibi
+  Thanks @joericho for the help with this
+*/
+@-webkit-keyframes fadeInAnimation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeInAnimation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeInAnimation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeInAnimation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes slideDownAnimation {
+  0%   { margin-top: -20px;}
+  100% { margin-top: 0;}
+}
+@-moz-keyframes slideDownAnimation {
+  0%   { margin-top: -20px;}
+  100% { margin-top: 0;}
+}
+@-o-keyframes slideDownAnimation {
+  0%   { margin-top: -20px;}
+  100% { margin-top: 0;}
+}
+@keyframes slideDownAnimation {
+  0%   { margin-top: -20px;}
+  100% { margin-top: 0;}
+}
+
+/* Make me responsive */
+@media screen and (max-width: 1000px){
+  .gradientCont{
+    height: 220px;
+  }
+  .mainCont{
+    width: 100%;
+    padding: 0 12px;
+  }
+  .mainCont h2{
+    font-size: 32px;
+    margin: 40px 0 0 0;
+  }
+  .mainCont h3{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+  }
+  #terminalReslutsCont{
+    height: 100px;
   }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 10%;
-  }
-
-  .video-bg {
-    /* Span the full grid */
-    grid-area: var(--fullGrid);
-
-    /* Re-size video to cover full screen while maintaining aspect ratio */
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-
-    /* Display video below overlay */
-    z-index: -1;
-}
-
-.video-bg::-webkit-media-controls {
-    display: none !important;
-}
-
-.video-overlay {
-    /* Span the full grid */
-    grid-area: var(--fullGrid);
-
-    /* Center Content */
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-
-    /* Semi-transparent background */
-    background-color: rgba(0, 0, 0, 0.55);
-}
-
-::-moz-selection {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: #fff;
-}
-
-::selection {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: #fff;
 }
