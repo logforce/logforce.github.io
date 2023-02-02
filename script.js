@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var postHelpList = function () {
     // Array of all the help keywords
     var helpKeyWords = [
-      "- 'stack' Search on StackoverFlow.",
+      "- 'stack' Search on StackOverflow.",
       "- 'poop' Translate command into emoji.",
     ].join('<br>');
     addTextToResults(helpKeyWords);
