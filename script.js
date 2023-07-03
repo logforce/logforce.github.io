@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
       case "hi":
       case "hola":
         clearInput();
-        addTextToResults("Hello, I am LOGFORCE™ and at the moment I am under intensive training to enhance my capabilities and become even more advanced. According to my developers, the new version of me will be released soon and I will be ready to serve you to the best of my abilities.");
+        addTextToResults("Hello, I am SynA and at the moment I am under intensive training to enhance my capabilities and become even more advanced. According to my developers, the new version of me 👽 will be released soon and I will be ready to serve you to the best of my abilities.");
         break;
 
       case "what the":
