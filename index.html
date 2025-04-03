@@ -15,6 +15,23 @@
 			<h2>A Tribute to Our First Placeholder</h2>
 			<h3>In this moment I am busy with learning, but you can say hi to friend-zone me.</h3>
 			<div class="terminalCont">
+				<div class="footerCont" id="message" style="color: #00ff00;">Redirecting on https://github.com/logforce
+					in 30 seconds</div>
+				<script>
+					let countdown = 30;
+					const redirectUrl = "https://github.com/logforce";
+					const messageElement = document.getElementById("message");
+
+					const interval = setInterval(() => {
+						countdown--;
+						messageElement.textContent = `Redirecting on https://github.com/logforce in ${countdown} seconds.`;
+
+						if (countdown <= 0) {
+							clearInterval(interval);
+							window.location.href = redirectUrl;
+						}
+					}, 1000);
+				</script>
 				<div id="terminalReslutsCont">
 				</div>
 				<form>
@@ -23,34 +40,20 @@
 			</div>
 			<div class="footerCont">
 				<image src="images/logforce_logo.png" width="100">
-				<br>
-				<br>
-				Dear valued visitor,
-				thank you for stopping by.
-				<br>
-				<b>We've kept this page alive as a nostalgic nod to our early days, when it served as our very first fun placeholder</b>.
-				<br>
-				For more information, please visit <a href="https://logforce.com/#comp-194834c6d01">logforce.com</a>.
+					<br>
+					<br>
+					Dear valued visitor,
+					thank you for stopping by.
+					<br>
+					<b>We've kept this page alive as a nostalgic nod to our early days, when it served as our very
+						first
+						fun placeholder</b>.
+					<br>
+					For more information, please visit <a
+						href="https://logforce.com/#comp-194834c6d01">logforce.com</a>.
 			</div>
-			
-			<p id="message">Redirecting on GitHub in 5...></p>
-			  <script>
-			    let countdown = 5;
-			    const redirectUrl = "https://github.com";
-			    const messageElement = document.getElementById("message");
-			
-			    const interval = setInterval(() => {
-			      countdown--;
-			      messageElement.textContent = `Redirecting on GitHub in ${countdown}...`;
-			
-			      if (countdown <= 0) {
-			        clearInterval(interval);
-			        window.location.href = redirectUrl;
-			      }
-			    }, 1000);
-			  </script>	
-	</div>
-	<script src="./script.js"></script>
+		</div>
+		<script src="./script.js"></script>
 
 </body>
 
