@@ -32,7 +32,23 @@
 				<br>
 				For more information, please visit <a href="https://logforce.com/#comp-194834c6d01">logforce.com</a>.
 			</div>
-		</div>
+			
+			<p id="message">Redirecting on GitHub in 5...></p>
+			  <script>
+			    let countdown = 5;
+			    const redirectUrl = "https://github.com";
+			    const messageElement = document.getElementById("message");
+			
+			    const interval = setInterval(() => {
+			      countdown--;
+			      messageElement.textContent = `Redirecting on GitHub in ${countdown}...`;
+			
+			      if (countdown <= 0) {
+			        clearInterval(interval);
+			        window.location.href = redirectUrl;
+			      }
+			    }, 1000);
+			  </script>	
 	</div>
 	<script src="./script.js"></script>
 
