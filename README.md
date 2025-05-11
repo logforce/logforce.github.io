@@ -1,5 +1,9 @@
-# LOGFORCE Community Edition
-**Welcome to the LOGFORCE Community Edition — a community-driven Autonomous Cybersecurity Fabric.**
+# LOGFORCE ecOS(ystem)
+**Welcome to the LOGFORCE Community Edition: A CLI-Powered, Zero-Install Security Fabric for Any System.**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/logforce/logforce.github.io/main/ecOS%28ystem%29_logo.png" alt="LOGFORCE Logo" width="40%"/>
+</p>
 
 ## Disclaimers
 > ⚠️ **Work in Progress**: This repository is under active development. Some links and features may not yet be fully functional. We appreciate your patience and contributions as we continue to build and improve the platform.
