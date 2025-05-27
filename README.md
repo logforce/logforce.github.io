@@ -2,7 +2,7 @@
 **Welcome to the LOGFORCE Community Edition: A CLI-Powered, Zero-Install Security Fabric for Any System.**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/logforce/logforce.github.io/main/ecOS%28ystem%29_logo.png" alt="LOGFORCE Logo" width="40%"/>
+  <img src="https://raw.githubusercontent.com/logforce/logforce.github.io/main/ecOS-ystem_logo.png" alt="LOGFORCE Logo" width="40%"/>
 </p>
 
 ## Disclaimers
