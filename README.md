@@ -22,7 +22,9 @@ By downloading, installing, or executing these binaries, you acknowledge and agr
 If you do not agree to these terms, **do not use** the provided binaries. 
 
 ## What Is This?
-**LOGFORCE Community Edition** is an Endpoint Cognitive Operating Shell (ecOS), positioned as an **Autonomous Cybersecurity Fabric** for modern threat landscapes. It is a lightweight, command-line-driven platform designed to explore the future of autonomous, explainable AI (XAI) in cybersecurity.
+**LOGFORCE Community Edition** is an Endpoint Cognitive Operating Shell (ecOS), positioned as an **Autonomous Cybersecurity Fabric** for modern threat landscapes.
+
+It comes as a lightweight, command-line-driven platform designed to explore the future of autonomous, explainable AI (XAI) in cybersecurity.
 
 It introduces two foundational constructs:  
 - **SEB (Synthetic Endpoint Brain):** A minimal, zero-install runtime that operates directly on endpoints, collecting telemetry and performing behavioral audits.  
