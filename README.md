@@ -28,7 +28,8 @@ It introduces two foundational constructs:
 - **SEB (Synthetic Endpoint Brain):** A minimal, zero-install runtime that operates directly on endpoints, collecting telemetry and performing behavioral audits.  
 - **SynA (Synthetic Analyst):** An explainable AI engine that interprets SEB outputs, learns from them, and evolves its models through tokenized community feedback.
 
-Together, SEB and SynA form an **inference-driven ecOSystem**, where SEB acts as the execution layer and SynA provides centralized analytical intelligence. These components collaborate to create a decentralized, transparent, and adaptive defense system, continuously evolving through usage and feedback.
+Together, SEB and SynA form an **inference-driven ecOSystem**, where SEB operates as the execution layer and SynA delivers decision intelligence.
+These components interoperate to enable a decentralized, transparent, and adaptive defense system—continuously evolving through real-world interaction and feedback loops.
 
 ## Why Join the LOGFORCE Community?
 
