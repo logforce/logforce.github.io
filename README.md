@@ -26,12 +26,19 @@ If you do not agree to these terms, **do not use** the provided binaries.
 
 It comes as a lightweight, command-line-driven platform designed to explore the future of autonomous, explainable AI (XAI) in cybersecurity.
 
-It introduces two foundational constructs:  
-- **SEB (Synthetic Endpoint Brain):** A minimal, zero-install runtime that operates directly on endpoints, collecting telemetry and performing behavioral audits.  
-- **SynA (Synthetic Analyst):** An explainable AI engine that interprets SEB outputs, learns from them, and evolves its models through tokenized community feedback.
+## What is ecOS?
 
-Together, SEB and SynA form an **inference-driven ecOSystem**, where SEB operates as the execution layer and SynA delivers decision intelligence.
-These components interoperate to enable a decentralized, transparent, and adaptive defense system—continuously evolving through real-world interaction and feedback loops.
+**ecOS** stands for *Endpoint Cognitive Operating Shell* — a modular CLI framework where intelligent agents and zero-trust policies converge at the prompt layer.
+
+At its core, ecOS integrates:
+
+- **SEB** (*Synthetic Endpoint Brain*) – a local execution layer that audits behavior, runs micro-investigations, and emits telemetry with zero performance impact.  
+- **SynA** (*Synthetic Analyst*) – an explainable AI engine that consumes SEB output, learns from it, and evolves its detection logic through tokenized feedback.
+- **STRIDE** (*Local-First Zero Trust AI that Protects AI*) - a real-time AI "firewall" for LLM, SLM, NLP.
+
+With **STRIDE**, : Every input is analyzed *before* reaching your model.
+
+Together, with **SynA** and **SEB** they form a fully autonomous, inference-driven system where **security is not bolted on — it’s built in**.
 
 ## Why Join the LOGFORCE Community?
 
