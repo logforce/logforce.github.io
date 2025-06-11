@@ -44,85 +44,139 @@
         </ul>
       </nav>
 
-      <p>[*] You can think of <code>./SEB</code> as the <i>COMMAND.COM</i> of Explainable AI (XAI): it's the first
-        command in the LOGFORCE Command Set, acting as the operational shell for the Synthetic Endpoint Brain. Just like
-        <i>COMMAND.COM</i> gave DOS its interactive life, <code>./SEB</code> boots the cognitive runtime that bridges
-        raw telemetry and intelligent action — one execution at a time.</p>
+      <p>
+        Think of <code>./SEB</code> as the <i>COMMAND.COM</i> of Explainable AI — the first entry in the LOGFORCE
+        Command Set.
+        It launches <strong>ecOS</strong>, the Endpoint Cognitive Operating Shell: a local-first runtime where
+        intelligent agents,
+        Zero Trust policies, and real-time enforcement converge at the command line. Just like <i>COMMAND.COM</i> gave
+        DOS its
+        interactive identity, <code>./SEB</code> boots a cognitive shell that transforms telemetry into trusted
+        execution —
+        one verified command at a time.
+        <br><br>
+        <strong>ecOS</strong> includes <code>./STRIDE</code>, a built-in firewall that intercepts and classifies every
+        input
+        before it reaches the model, neutralizing prompt injections, spoofing, and other advanced threats.
+        Supporting it is <strong>SynA</strong> — the Synthetic Analyst — an explainable AI brain that interprets
+        telemetry,
+        evolves detection logic through tokenized feedback, and coordinates investigative tasks across the ecosystem.
+        <br><br>
+        Together, <code>./SEB</code>, <code>./STRIDE</code>, and <strong>SynA</strong> form the backbone of
+        <strong>ecOS</strong>:
+        a secure, inference-driven shell where <em>AI protects AI</em> — locally, autonomously, and from the very first
+        prompt.
+        <br><br>
+        [*] The ecOS command set is available for all major platforms, including x86_64, ARM64,
+        RISC-V,
+        and more — ensuring portability across desktops, servers, and edge devices.
+      </p>
 
       <pre>
 
-        >>> INITIATING SYSTEM BRIEF...
+>>> INITIATING SYSTEM BRIEF...
 
-        Welcome, Operator.
-        
-        LOGFORCE  COMMUNITY  EDTION  is  an Endpoint Cognitive Operating Shell
-        [ecOS], forged from two core constructs:
-        
-        - SEB (Synthetic Endpoint Brain)
-        - SynA (Synthetic Analyst)
-        
-        conceived  as  a  inference-driven  ecOSystem  where  SEB  acts as the
-        execution layer and SynA provides analytical intelligence.
-        
-        [SEB]   resides  silently  on  each  endpoint,  harvesting  telemetry,
-        executing  behavioral  audits,  and  dispatching  findings  with  zero
-        overhead.
-        
-        [SynA]  is  the  central  intelligence—an  explainable  AI  brain—that
-        interprets  SEB  output,  learns  from  it, and evolves its models via
-        tokenized community feedback (NFT-based logic tokens).
-        
-        Together,  SEB  and SynA form an inference-driven ecOSystem, where SEB
-        operates   as   the   execution   layer  and  SynA  delivers  decision
-        intelligence. These components interoperate to enable a decentralized,
-        transparent,   and  adaptive  defense  system,  continuously  evolving
-        through real-world interaction and feedback loops.
-        
-        ===[ SYSTEM ARCHITECTURE ]===
-        
-        +-----------+       Tasking        +-----------+
-        |           | <------------------- |           |
-        |   SynA    |                      |    SEB    |
-        |           | ------------------>  |           |
-        +-----------+     Findings         +-----------+
-                |                              ^
-                |                              |
-                v                              |
-          +------------------+   Events    +--------+
-          |   LMDB (Logs)    | <---------- | Device |
-          +------------------+             +--------+
-        
-        ===[ EXECUTION FLOW ]===
-         1. Alert is raised via DataDriver
-         2. SEB is deployed to endpoint
-         3. SynA assigns investigative tasks
-         4. SEB executes & reports
-         5. SynA learns from results (XAI)
-         6. Feedback becomes community-owned NFT
-        
-        ===[ ATTRIBUTES ]===
-         - Modular collectors + exporters
-         - Stateless, CLI-friendly execution
-         - Model evolution via Sophia NFT framework
-         - Autonomous endpoint containment
-        
-        >>> END OF TRANSMISSION...
+Welcome, Operator.
+
+LOGFORCE COMMUNITY EDITION initiates ecOS — the Endpoint Cognitive Operating 
+Shell — an inference-driven command layer where AI defends AI before execution 
+occurs.
+
+ecOS integrates:
+
+- STRIDE: a prompt-level Zero Trust firewall that intercepts and classifies 
+  input before any model inference is allowed.
+
+- SEB (Synthetic Endpoint Brain): a lightweight endpoint agent that executes 
+  behavioral audits, collects telemetry, and reacts in real time.
+
+- SynA (Synthetic Analyst): a centralized explainable AI engine that coordinates 
+  analysis, evolves logic via tokenized feedback, and provides verified insight.
+
+Together, STRIDE, SEB, and SynA form a self-contained ecosystem for AI security: 
+local, adaptive, and community-enhanced.
+
+=== SYSTEM ARCHITECTURE ===
+
+            [1] Prompt Input
+                    |
+                    v
+           +------------------+
+           |     STRIDE       |
+           |  (Interception)  |
+           +------------------+
+                    |
+        +-----------+-----------+
+        |                       |
+        v                       v
++------------------+     +------------------+
+|       SEB        |<--->|      SynA        |
+| (Endpoint Brain) |     | (XAI Analyst)    |
++------------------+     +------------------+
+        |     ^                   |
+        |     |                   |
+        |     +--------+          v
+        |              |   +------------------+
+        |              +-->|  Contextual Tasks|
+        |                  +------------------+
+        |                          |
+        v                          |
++------------------+               |
+|   Command Exec   |               |
+|   + Telemetry    |               |
++------------------+               |
+        |                          |
+        +--------------------------+
+        |                          |
+        v                          v
++------------------+     +--------------------------+
+|    Device        |     |     LMDB (Local Logs)    |
++------------------+     +--------------------------+
+                                |
+                                v
+                       +------------------------+
+                       |  Sophia NFT Framework  |
+                       |  (Tokenized Feedback)  |
+                       +------------------------+
+
+=== EXECUTION FLOW ===
+
+1. STRIDE intercepts and classifies input
+2. SEB is triggered to verify or investigate
+3. SynA tasks SEB with contextual checks
+4. SEB executes commands and returns results
+5. SynA analyzes and adapts logic
+6. Verified logic is minted as a Sophia NFT
+
+=== ATTRIBUTES ===
+                      
+- Prompt-level input control
+- Autonomous endpoint enforcement
+- Stateless, CLI-native command set
+- Model evolution via community-owned NFTs
+- No cloud dependencies or round-trips                      
+
+>>> END OF TRANSMISSION...
         </pre>
 
-      <!--form>
-        <label>Name >></label><input type="text" /><br />
+      <form>
+        <!--label>Name >></!--label><input type="text" /><br />
         <label>Email >></label><input type="text" /><br />
         <label>Subject >></label><input type="text" /><br />
         <label>Message >></label><textarea id="text" rows="1"></textarea><br /><br /><br />
-        <input type="submit" value="Submit" />
-        <a class="button" alt="" href="index.html">Cancel</a>
-      </!--form>
+        <input type="submit" value="Submit" /-->
+        <label>Join our Discussion Group to get a sneak peek at upcoming features and request preview access:
+        </label>
+        <br /><br />
+        <a class="button" alt="Join LOGFORCE ecOS Discussion Group" href="https://logforcegroup.slack.com/"
+          target="_blank">Join</a>
+      </form>
     </div>
-  </div-->
+    </div-->
 
-      <script src='./jquery.min.js'></script>
-      <script src='./jquery.autosize-min.js'></script>
-      <script src="./script.js"></script>
+    <script src='./jquery.min.js'></script>
+    <script src='./jquery.autosize-min.js'></script>
+    <script src="./script.js"></script>
 
 </body>
 
