@@ -15,7 +15,7 @@ ecOS operates on top of the first **Large Telemetry Model (LTM)** — a telemetr
 
 ## Self-Reinforcing Generative Learning
 
-ecOS and LTM implement **Self-Reinforcing Generative Learning (SRGL)** — a closed loop that converts raw activity and curated intelligence into new, higher‑quality detections and policies, reinforced by outcomes.
+ecOS and LTM implement **Self-Reinforcing Generative Learning (SRGL)**, a neuroscience-inspired, GAN-like framework that ingests raw activity and curated intelligence to generate improved detections and policies, iteratively optimized via outcome feedback.
 
 **SRGL loop**
 
