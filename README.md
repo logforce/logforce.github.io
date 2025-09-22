@@ -13,11 +13,11 @@ ecOS operates on top of the first **Large Telemetry Model (LTM)** — a telemetr
 
 ---
 
-## Auto Generative Reinforced Learning (AGRL)
+## Self-Reinforcing Generative Learning (SRGL)
 
-ecOS and LTM implement **Auto Generative Reinforced Learning (AGRL)** — a closed loop that converts raw activity and curated intelligence into new, higher‑quality detections and policies, reinforced by outcomes.
+ecOS and LTM implement **Self-Reinforcing Generative Learning (SRGL)** — a closed loop that converts raw activity and curated intelligence into new, higher‑quality detections and policies, reinforced by outcomes.
 
-**AGRL loop**
+**SRGL loop**
 
 1. **Observe** — The endpoint senses high‑value behaviors (process, file, network, identity, OS artifacts) and emits compact, structured signals to LTM while preserving originals for audit.
 2. **Propose** — Generative models synthesize candidate behavior profiles, policies, and enrichment rationales from current signals and prior knowledge.
