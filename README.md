@@ -78,7 +78,7 @@ Together, **SEB + SynA + STRIDE** make ecOS an autonomous, inference‑driven sh
 
 - **Speed with assurance** — faster triage and response, backed by transparent evidence and calibrated confidence.
 - **Lower operational friction** — an external mapping governs evolution without code changes, reducing coupling and maintenance.
-- **Continuous improvement** — AGRL converts day‑to‑day outcomes into lasting capability, respecting and amplifying analyst judgment.
+- **Continuous improvement** — SRGL converts day‑to‑day outcomes into lasting capability, respecting and amplifying analyst judgment.
 - **Trust and accountability** — deterministic policies, auditable learning steps, and precise provenance from collection to decision.
 
 ---
