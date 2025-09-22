@@ -13,7 +13,7 @@ ecOS operates on top of the first **Large Telemetry Model (LTM)** — a telemetr
 
 ---
 
-## Self-Reinforcing Generative Learning (SRGL)
+## Self-Reinforcing Generative Learning
 
 ecOS and LTM implement **Self-Reinforcing Generative Learning (SRGL)** — a closed loop that converts raw activity and curated intelligence into new, higher‑quality detections and policies, reinforced by outcomes.
 
@@ -91,7 +91,7 @@ The Community Edition is focused on education, research, and collaborative innov
 
 ## Roadmap Highlights
 
-- **Foundations:** CLI, SEB sensing, STRIDE guardrails, SynA explanations, external mapping, end‑to‑end AGRL loop.  
+- **Foundations:** CLI, SEB sensing, STRIDE guardrails, SynA explanations, external mapping, end‑to‑end SRGL loop.  
 - **Depth:** Broader process/file/network coverage, richer identity and OS artifacts, label provenance, confidence calibration, drift detection.  
 - **Generative:** Intelligence‑to‑policy synthesis with validation and staged activation.  
 - **Operations:** Robust governance, continuous calibration, and telemetry‑driven optimization of collection and inference.
