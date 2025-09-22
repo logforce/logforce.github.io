@@ -100,4 +100,4 @@ The Community Edition is focused on education, research, and collaborative innov
 
 ## Summary
 
-**ecOS** is the endpoint’s cognitive shell — a precise, CLI‑driven environment that makes security immediate, explainable, and adaptive. Running on top of the **Large Telemetry Model (LTM)**, ecOS unifies sensing, reasoning, and enforcement under **Auto Generative Reinforced Learning**, so every system can defend itself, learn from experience, and transform expert judgment into enduring capability.
+**ecOS** is the endpoint’s cognitive shell — a precise, CLI‑driven environment that makes security immediate, explainable, and adaptive. Running on top of LOGFORCE **Large Telemetry Model (LTM)**, ecOS unifies sensing, reasoning, and enforcement under **Auto Generative Reinforced Learning**, so every system can defend itself, learn from experience, and transform expert judgment into enduring capability.
