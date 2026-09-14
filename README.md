@@ -738,3 +738,16 @@ CogPOSIX Contract
         │
         ▼
 Developer
+```
+
+<p align="center">
+  <a href="https://logforceai.slack.com/">
+    <img
+      src="https://img.shields.io/badge/Slack-ecOS%20%3E__%20CogPOSIX-4A154B?style=for-the-badge&logo=slack&logoColor=white"
+      alt="Join ecOS >_ CogPOSIX on Slack"
+      height="58"
+    />
+  </a>
+  <br>
+  <sub><strong>Join the community. Build the AI-native operating system with us.</strong></sub>
+</p>
