@@ -30,6 +30,9 @@ implemented.
 | R5 | Local model packages | Manifest/hash checks, approved activation, malformed package rejection | R3 |
 | R6 | Graph/stream prototype | Two-model pipeline, dependency failure and buffer lifetime correctness | R4, R5 |
 | R7 | One accelerator profile | Same contract, measured transfers/quality, reset and memory-pressure behavior | R4, R5 |
+| F1 | Opt-in two-node execution | Authenticated enrollment, locality/egress denial, placement visibility, replay/revocation/partition tests | R4, R5, C1 |
+| F2 | Governed knowledge services | Scoped DuckDB/Qdrant evaluation, provenance, freshness, deletion and tenant isolation | F1 and data-access policy |
+| F3 | Optional distributed improvement research | Eligible data, held-out benefit, poisoning/privacy checks and independent promotion/rollback | F2 and separate learning approval |
 | C1 | Controlled capability catalogue | Semantic profiles, pinned artifacts, quality reports and substitution tests | R5 |
 | A1 | Independent applications | Three integrations spanning at least three model classes | R6, C1 |
 | O1 | Base OS prototype selection | Fedora/bootc versus Debian installation/update/recovery report | R3 |
@@ -44,6 +47,10 @@ The original mock, shared-memory, CPU, scheduler, registry and graph sequence is
 preserved conceptually. Worker isolation moves ahead of untrusted real-model use.
 An early accelerator benchmark follows CPU correctness to test buyer value before
 the project builds the full OS experience.
+
+F1-F3 are the planned [distributed intelligence track](distributed-intelligence.md).
+They do not block a standalone local OS preview. F1 starts with whole-job dispatch,
+not arbitrary cross-node model parallelism; F2 does not imply permission for F3.
 
 ## 2. Performance Protocol
 

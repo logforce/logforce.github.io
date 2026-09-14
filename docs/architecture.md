@@ -146,3 +146,17 @@ Unsupported features return explicit errors rather than silently changing data.
 Language-generation features such as KV-cache management can be optional
 extensions. They must not determine the core representation of audio, images,
 signals or generic computation.
+
+## 9. Optional Distributed Intelligence
+
+The planned [CogPOSIX fabric](distributed-intelligence.md) connects enrolled
+workstations, AI nodes and edge devices within an ecOS policy domain. It is an
+opt-in brokered transport, not an extension of local shared memory or implicit
+worker networking. Another machine always remains another execution boundary.
+Whole-job placement precedes multi-node pipelines or distributed training.
+
+Execution authority, knowledge-service access and model improvement are separate
+planes. DuckDB/Qdrant are candidate services behind scoped authorization, not a
+globally shared database file. Actual placement, transfers, revocation and uncertain
+outcomes must be exposed through a future versioned contract. Current runtime
+behavior and ABI are unchanged.
