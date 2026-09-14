@@ -1,5 +1,12 @@
 # ecOS
 
+**ecOS >_ is our new operating system, being designed and built for local
+intelligence. CogPOSIX is its own POSIX-inspired AI system interface.**
+
+This is an original operating-system project, not an adopted third-party OS.
+The working runtime is an implementation milestone; the complete installable OS
+is in development.
+
 ## The Operating System for Local Intelligence
 
 **Local-first AI. System-level governance. Explicit trust boundaries.**
