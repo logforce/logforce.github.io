@@ -43,6 +43,15 @@ the application imported sealed shared memory. This is not end-to-end zero-copy.
 The default mock runs inside the daemon instead. See the
 [ONNX worker report](onnx-worker.md) and [deployment examples](deployment-examples.md).
 
+The optional [ETE-X retrieval profile](ete-x.md) follows this same native
+application → daemon → persistent worker path with query encoding, bounded vector
+search and optional reranking inside the worker. Its `etex.rag.search.v1` profile
+uses fixed U8 JSON envelopes and the unchanged C ABI. Trusted operator configuration
+selects its source, models and immutable corpus. The default build excludes the
+separately licensed ETE-X backend; an explicit `etex` feature enables it on Linux.
+Its pure CogSheet semantic mapper does not supply host identity, corpus grants or
+a network isolation mechanism.
+
 1. The client negotiates a protocol and authenticates through the local transport.
 2. The daemon establishes identity, quotas and an isolated handle namespace.
 3. The client opens a specific approved artifact; later profiles allow capability resolution.
@@ -98,10 +107,16 @@ profile may deliberately incur a copy.
 
 ## 5. Scheduling and Memory Policy
 
-The first scheduler uses FIFO within authorized priority classes. Limit queue
-length and concurrent jobs, add aging or another specified starvation bound, and
-reserve capacity for system maintenance. Requests for elevated priority must be
-authorized; every client calling itself REALTIME defeats arbitration.
+The experimental local scheduler now uses per-session FIFO queues with
+round-robin dispatch between ready sessions. It preserves existing admission and
+memory limits and reports session-scoped queue/execution counters. This first R4
+subset is nonpreemptive and has no client-selectable priorities. It is not yet
+application-identity fairness, a distributed scheduler or a real-time guarantee.
+
+Authorized priority classes, explicit starvation/maintenance policies and measured
+overhead remain future work. Requests for elevated priority must be authorized;
+every client calling itself REALTIME defeats arbitration. See the
+[development evidence and limits](development.md#local-scheduling-and-accounting-subset).
 
 Deadline metadata is a requirement or target as explicitly declared by the caller.
 The runtime must report unsupported guarantees. It must not describe nonpreemptive
